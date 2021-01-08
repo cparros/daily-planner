@@ -8,9 +8,6 @@ var day = dayjs().format('D')
 var hour = dayjs().format('HH')
 var minute = dayjs().format('mm a')
 
-var button = $('button')
-button.append('<img src="./floppy-disk.png">')
-
 //to hour div text
 var divOne = $('#one').text(dayjs().hour(8).format('HH a'))
 console.log(divOne.text())

@@ -51,8 +51,10 @@ textarea{
 }
 
 button {
-margin: 0;
-padding: 0;
+background-image: url("floppy-disk.png");
+background-size: 25%;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 img{
