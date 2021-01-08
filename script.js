@@ -35,7 +35,17 @@ console.log(divTen.text())
 var divArray = [divOne, divTwo, divThree, divFour, divFive, divSix, divSeven, divEight, divNine, divTen]
 console.log(divArray)
 console.log(divArray.length)
-
+divArray.forEach(element => {
+  if(element.text() < now) {
+   element.next().attr('class', 'col-md-9 past')
+  }
+  else if(element.text() === now) {
+    element.next().attr('class', 'col-md-9 present')
+   }
+  else if(element.text() > now) {
+    element.next().attr('class', 'col-md-9 future')
+   }
+})
 
 
   
