@@ -70,12 +70,11 @@ function load() {
 saveButton.click(function(e) {
   e.preventDefault()
   
-  var events = $(this).prev().val()
-  console.log(events)
-
-  for(i=0; i < textDiv.length; i++){
+  var eventsVal = $(this).prev().val()
   var savedSaved =  []
-  savedSaved.push(textDiv.val())
+  for(i=0; i < textDiv.length; i++){
+  
+  savedSaved.push(eventsVal)
   localStorage.setItem('eventTexts', savedSaved)
 }
 
